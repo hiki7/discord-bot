@@ -39,6 +39,9 @@ async def on_message(message):
 
     await client.process_commands(message)
 
+# @client.event
+# async def on_member_join(member):
+#     await client.get_channel().send(f"{member.name} has joined the server!")
 
 @client.command(aliase=['purge'])
 async def clear(ctx, amount=11):
